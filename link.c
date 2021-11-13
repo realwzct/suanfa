@@ -4,14 +4,14 @@
 
 typedef struct Link
 {
-    int elem;                                  //代表数据域
+    int elem;                                   //代表数据域
     struct Link *next;                          //代表指针域，指向直接后继元素
 } link;
 
 link *initLink()
 {
-    link *p = (link *)malloc(sizeof(link)); //创建一个头结点
-    link *temp = p;                         //声明一个指针指向头结点，用于遍历链表
+    link *p = (link *)malloc(sizeof(link));     //创建一个头结点
+    link *temp = p;                             //声明一个指针指向头结点，用于遍历链表
     //生成链表
     for (int i = 1; i < 5; i++)
     {
