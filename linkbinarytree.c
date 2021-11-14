@@ -8,6 +8,7 @@ typedef struct BiTNode
     TElemType data;                  //数据域
     struct BiTNode *lchild, *rchild; //左右孩子指针
 } BiTNode, *BiTree;
+
 void CreateBiTree(BiTree *T)
 {
     *T = (BiTNode *)malloc(sizeof(BiTNode));
