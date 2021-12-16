@@ -60,6 +60,7 @@ link *delElem(link *p, int add)
     return p;
 }
 
+
 void display(link *p)
 {
     link *temp = p; //将temp指针重新指向头结点
@@ -76,7 +77,7 @@ int main(void)
 {
     link *b = initLink();
     // display(b);
-    b = insertElem(b, 55, 3);
+    // b = insertElem(b, 55, 3);
     // display(b);
     // b = delElem(b, 1);
     // display(b);
